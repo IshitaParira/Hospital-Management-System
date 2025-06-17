@@ -21,7 +21,7 @@ A Django-based web application that allows hospital administrators to manage doc
   - CSV
   - Excel
 - Clean and responsive Bootstrap UI
---
+---
 ## Tech Stack
 - Django 5.2
 - HTML, CSS, Bootstrap
@@ -35,12 +35,12 @@ git clone https://github.com/IshitaParira/Hospital-Management-System.git
 cd Hospital-Management-System
 pip install -r requirements.txt
 
-## Django setup
+# Django setup
 python manage.py makemigrations
 python manage.py migrate
 
-## Create an admin user
+# Create an admin user
 python manage.py createsuperuser
 
-## Run the development server
+# Run the development server
 python manage.py runserver
