@@ -28,22 +28,29 @@ A Django-based web application that allows hospital administrators to manage doc
 - SQLite
 ---
 ## How to Run
-Clone the repo and set up the project:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/IshitaParira/Hospital-Management-System.git
+   
+2. **Move to project folder**
+   ```bash
+    cd Hospital-Management-System
+    cd hospitalmgmt_pro
 
-```bash
-# Step1: clone the repo
-git clone https://github.com/IshitaParira/Hospital-Management-System.git
-# Step2: move to project folder
-cd Hospital-Management-System
-# Step3: Install required python packages
-pip install -r requirements.txt
+3. **Install required python packages**
+   ```bash
+    pip install -r requirements.txt
 
-# Step4: Django setup
-python manage.py makemigrations
-python manage.py migrate
+4. **Django setup**
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
 
-# Step5:Create an admin user
-python manage.py createsuperuser
+5. **Create an admin user**
+   ```bash
+    python manage.py createsuperuser
+  give admin name, email id and password
 
-# Step 6:Run the development server
-python manage.py runserver
+6. **Run the development server**
+   ```bash
+    python manage.py runserver
