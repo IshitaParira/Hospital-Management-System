@@ -31,16 +31,19 @@ A Django-based web application that allows hospital administrators to manage doc
 Clone the repo and set up the project:
 
 ```bash
+# Step1: clone the repo
 git clone https://github.com/IshitaParira/Hospital-Management-System.git
+# Step2: move to project folder
 cd Hospital-Management-System
+# Step3: Install required python packages
 pip install -r requirements.txt
 
-# Django setup
+# Step4: Django setup
 python manage.py makemigrations
 python manage.py migrate
 
-# Create an admin user
+# Step5:Create an admin user
 python manage.py createsuperuser
 
-# Run the development server
+# Step 6:Run the development server
 python manage.py runserver
