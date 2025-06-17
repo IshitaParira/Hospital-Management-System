@@ -1,5 +1,5 @@
 # Hospital-Management-System
-Hospital Management System is a web-based application built using Django and Bootstrap.It provides role-based access for admins to manage doctors, patients, and appointments.Features include CRUD operations, responsive UI, and interactive data tables with export options.
+A web-based application built using Django and Bootstrap that provides role-based access for admins to manage doctors, patients, and appointments.Features include CRUD operations, responsive UI, and interactive data tables with export options.
 --
 ## Screenshots
 ### Admin login
