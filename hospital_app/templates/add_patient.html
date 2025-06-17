@@ -1,0 +1,35 @@
+{% extends "navbar.html" %}
+{% block body %}
+<div class='container'>
+    <h2 class='text-center'>Add Patient</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label>Patient Name</label>
+        <input type="text" class="form-control" name="name" required>
+        <label>Age</label>
+        <input type="text" class="form-control" name="age" pattern="\d+" required>
+        <label>Gender</label>
+        <br>
+        <div class="border p-2 rounded"><input type="radio" name="gender" Value="Male">Male</div>
+        <div class="border p-2 rounded"><input type="radio" name="gender" Value="Female">Female</div>
+        <label>Number</label>
+        <input type="text" class="form-control" name="number" required>
+        <label>Address</label>
+        <input type="text" class="form-control" name="address">
+        <br>
+        <input type="submit" value="Submit" class="form-control btn btn-primary">
+    </form>
+</div>
+{% if error == "no" %}
+<script>
+    alert('Record saved successfully');
+    window.location="{% url 'view_patient' %}";
+</script>
+{% endif %}
+
+{% if error == "yes" %}
+<script>
+    alert('Something went wrong, try again');
+</script>
+{% endif %}
+{% endblock body %}

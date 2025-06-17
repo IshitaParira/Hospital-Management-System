@@ -1,0 +1,29 @@
+{% extends "navbar.html" %}
+{% block body %}
+
+{% if error == "no" %}
+<script>
+    alert('logged in succesfully');
+    window.location="{% url 'home' %}";
+</script>
+{% endif %}
+
+{% if error == "yes" %}
+<script>
+    alert('Invalid login crdentials, try again');
+</script>
+{% endif %}
+
+<div class='container'>
+    <h2 class='text-center'>Admin Login</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label>Admin Name</label>
+        <input type="text" class="form-control" name="uname">
+        <label>Password</label>
+        <input type="password" class="form-control" name="pwd">
+        <br>
+        <input type="submit" value="Login" class="form-control btn btn-primary">
+    </form>
+</div>
+{% endblock body %}
